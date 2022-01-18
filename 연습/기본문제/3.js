@@ -8,3 +8,12 @@ function solution(n) {
 }
 
 console.log(solution(25));
+
+/*
+function solution(n) {
+  let p = Math.ceil(n/12);
+  return p;
+}
+
+console.log(solution(25));
+*/
