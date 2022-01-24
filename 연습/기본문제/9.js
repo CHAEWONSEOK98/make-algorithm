@@ -17,3 +17,28 @@ function solution(str) {
 
 const str = String("BANANA");
 console.log(solution(str));
+
+/*
+function solution(s) {
+  let answer ="";
+  for(let item of s){
+    if(item === 'A') answer += '#';
+    else answer += item;
+  }
+  return answer;
+}
+
+let str = "BANANA";
+console.log(solution(str));
+*/
+
+/*
+function solution(s) {
+  let answer = s;
+  answer = answer.replace(/A/g, '#');
+  return answer;
+}
+
+let str = "BANANA";
+console.log(solution(str));
+*/
