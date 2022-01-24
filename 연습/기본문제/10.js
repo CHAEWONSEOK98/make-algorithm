@@ -18,3 +18,26 @@ function solution(str) {
 const str = String("COMPUTERPROGRAMMING");
 const uniqueStr = String("R");
 console.log(solution(str));
+
+/*
+function solution(s, t){
+  let answer = 0;
+  for(let item of s){
+    if(item===t) answer++;
+  }
+  return answer;
+}
+
+let str = "COMPUTERPROGRAMMING";
+console.log(solution(str, 'G'));
+*/
+
+/*
+function solution(s, t){
+  let answer = s.split(t).length;
+  return answer - 1;
+}
+
+let str = "COMPUTERPROGRAMMING";
+console.log(solution(str, 'G'));
+*/
