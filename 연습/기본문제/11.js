@@ -15,3 +15,18 @@ function solution(str) {
 
 const str = String("KoreaTimeGood");
 console.log(solution(str));
+
+/*
+function solution(s) {
+  let answer = 0;
+  for(let item of s){
+    //let num = item.charCodeAt();
+    //if(num >= 65 && num <= 90) answer ++;
+    if(item === item.toUpperCase()) answer++;
+  }
+  return answer;
+}
+
+let str = "KoreaTimeGood";
+console.log(solution(str));
+*/
