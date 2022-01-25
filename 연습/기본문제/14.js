@@ -10,6 +10,21 @@ function solution(arr) {
   console.log(brr[0]);
 }
 
-const N = 5;
 const arr = ["teacher", "time", "student", "beautiful", "good"];
 console.log(solution(arr));
+
+/*
+function solution(s) {
+  let answer, max=Number.MIN_SAFE_INTEGER;
+  for(let x of x){
+    if(x.length>max){
+      max=x.length;
+      answer = x;
+    }
+  }
+  return answer;
+}
+
+let str=["teacher", "time", "student", "beautiful", "good"]
+console.log(solution(str));
+*/
