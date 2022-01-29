@@ -11,3 +11,19 @@ function solution(arr) {
 
 const arr = ["good", "time", "good", "time", "student"];
 console.log(solution(arr));
+
+/*
+
+function solution(s) {
+  let answer;
+  //console.log(s.indexOf("time"));
+  answer=s.filter(function(v, i){
+    //if(s.indexOf(v)===i) return true;
+    return s.indexOf(v) === i;
+  });
+  return answer;
+}
+
+const arr = ["good", "time", "good", "time", "student"];
+console.log(solution(arr));
+*/
