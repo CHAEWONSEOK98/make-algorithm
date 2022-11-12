@@ -13,3 +13,6 @@ function solution(string) {
   return lower + upper;
 }
 console.log(solution('BbcACdefg'));
+
+// 좀더 간결한 다른 풀이
+// return s.split('').sort().reverse().join('');
