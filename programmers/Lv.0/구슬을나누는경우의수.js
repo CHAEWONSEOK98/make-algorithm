@@ -37,5 +37,4 @@ function factorial(num) {
   }
   return returnFactorial;
 }
-
 console.log(solution(5, 3));
