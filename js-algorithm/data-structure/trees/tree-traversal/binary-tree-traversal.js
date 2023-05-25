@@ -86,7 +86,30 @@ class BinarySearchTree {
     }
     return data;
   }
+  DFSPreOrder() {
+    let data = [];
+    function traverse(node) { 
+        data.push(node.value);
+        if(node.left) traverse(node.left); 
+        if(node.right) traverse(node.right);
+    }
+    
+    traverse(this.root);
+    return data; // [10, 6, 3, 8, 15, 20]
+  }
 }
+
+
+let tree = new BinarySearchTree();
+tree.insert(10);
+tree.insert(6);
+tree.insert(15);
+tree.insert(3);
+tree.insert(8);
+tree.insert(20);
+
+
+// BFS
 
         10
     6       15
@@ -96,10 +119,4 @@ class BinarySearchTree {
 // DATA: [] > [10] > [10, 6]
 // RESULT: [10, 6, 15, 3, 8, 20]
 
-let tree = new BinarySearchTree();
-tree.insert(10);
-tree.insert(6);
-tree.insert(15);
-tree.insert(3);
-tree.insert(8);
-tree.insert(20);
+
