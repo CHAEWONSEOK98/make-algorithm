@@ -114,7 +114,7 @@ class BinarySearchTree {
         if(node.right) traverse(node.right);
     }
     traverse(this.root);
-    return data; // [3, 8, 6, 20, 15, 10];
+    return data; // [3, 6, 8, 10, 15, 20]
   }
 }
 
