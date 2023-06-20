@@ -1,5 +1,51 @@
 // 2019 카카오 개발자 겨울 인턴십
 
+```
+나중에 다시 풀어본 풀이
+function solution(board, moves) {
+  let stack = [];
+  let cnt = 0;
+
+  for (let i = 0; i < moves.length; i++) {
+    let fixedPosition = moves[i] - 1;
+    for (let j = 0; j < board[0].length; j++) {
+      if (board[j][fixedPosition] !== 0) {
+        let item = board[j][fixedPosition];
+        if (stack[stack.length - 1] === item) {
+          stack.pop();
+          cnt += 2;
+          board[j][fixedPosition] = 0;
+          break;
+        } else {
+          stack.push(item);
+          board[j][fixedPosition] = 0;
+          break;
+        }
+      }
+    }
+  }
+  return cnt;
+}
+
+console.log(
+  solution(
+    [
+      [0, 0, 0, 0, 0],
+      [0, 0, 1, 0, 3],
+      [0, 2, 5, 0, 1],
+      [4, 2, 4, 4, 2],
+      [3, 5, 1, 3, 1],
+    ],
+    [1, 5, 3, 5, 1, 2, 1, 4]
+  )
+);
+```
+
+
+
+
+
+
 [풀이과정]
 - Stack에 moves 배열 값을 각각 push, 이전 값과 같을 경우 pop,
     - 원래는 이전 값과 같지 않았는데 어떤 수가 push된 후 이전 값과 같아서 pop하고보니 이전 값과 같아진 경우는 어떤 방식으로 처리할지?
